@@ -33,3 +33,6 @@ ocean_build
 ocean_build_thirdparty
 ocean_install
 ocean_install_thirdparty
+
+install_ocean_thirdparty
+build_ocean_thirdparty

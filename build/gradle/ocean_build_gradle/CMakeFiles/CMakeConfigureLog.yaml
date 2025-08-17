@@ -1,0 +1,634 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      The target system is: Android - 1 - aarch64
+      The host system is: Linux - 6.8.0-63-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security
+      Id flags: -c;--target=aarch64-none-linux-android33 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/3.30.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security
+      Id flags: -c;--target=aarch64-none-linux-android33 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/3.30.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI"
+      binary: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-33"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI'
+        
+        Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_d30fd
+        [1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -c /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+        Target: aarch64-none-linux-android33
+        Thread model: posix
+        InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin
+         (in-process)
+         "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android33 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI -resource-dir /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -x c /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+        End of search list.
+        [2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -o cmTC_d30fd   && :
+        Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+        Target: aarch64-none-linux-android33
+        Thread model: posix
+        InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_d30fd /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_d30fd]
+        ignore line: [[1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -c /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+        ignore line: [Target: aarch64-none-linux-android33]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android33 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI -resource-dir /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-rX0BPI -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -x c /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl --build-id=sha1 -Wl --fatal-warnings -Wl --gc-sections -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o -o cmTC_d30fd   && :]
+        ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+        ignore line: [Target: aarch64-none-linux-android33]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_d30fd /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o]
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld] ==> ignore
+          arg [--sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [--warn-shared-textrel] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-zmax-page-size=4096] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker64] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d30fd] ==> ignore
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o] ==> obj [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [CMakeFiles/cmTC_d30fd.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o] ==> obj [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o]
+        linker tool for 'C': /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+        remove lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        remove lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o]
+        implicit dirs: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Running the C compiler's linker: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" "-v"
+      LLD 14.0.6 (compatible with GNU linkers)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y"
+      binary: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-33"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat  "
+      CMAKE_CXX_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y'
+        
+        Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_3c36f
+        [1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -c /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+        Target: aarch64-none-linux-android33
+        Thread model: posix
+        InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin
+         (in-process)
+         "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android33 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y -resource-dir /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+         /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+        End of search list.
+        [2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3c36f   && :
+        Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+        Target: aarch64-none-linux-android33
+        Thread model: posix
+        InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_3c36f /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+          add: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        collapse include dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_3c36f]
+        ignore line: [[1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -c /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+        ignore line: [Target: aarch64-none-linux-android33]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android33 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y -resource-dir /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-yxl60y -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        ignore line: [ /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -static-libstdc++ -Wl --build-id=sha1 -Wl --fatal-warnings -Wl --gc-sections -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3c36f   && :]
+        ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+        ignore line: [Target: aarch64-none-linux-android33]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_3c36f /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33 -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o]
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld] ==> ignore
+          arg [--sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [--warn-shared-textrel] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-zmax-page-size=4096] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker64] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3c36f] ==> ignore
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o] ==> obj [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+          arg [-L/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [CMakeFiles/cmTC_3c36f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lc++] ==> lib [c++]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o] ==> obj [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o]
+        linker tool for 'CXX': /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+        remove lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        remove lib [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+        collapse library dir [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit libs: [c++;m;-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtbegin_dynamic.o;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33/crtend_android.o]
+        implicit dirs: [/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/aarch64;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/33;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Running the CXX compiler's linker: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" "-v"
+      LLD 14.0.6 (compatible with GNU linkers)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindJNI.cmake:489 (check_source_compiles)"
+      - "impl/ocean/platform/android/CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-N0BMpT"
+      binary: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-N0BMpT"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-33"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/home/fcx/lib/git/ocean/build/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "JNI_INCLUDE_PATH2_OPTIONAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-N0BMpT'
+        
+        Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_c4c83
+        [1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DJNI_INCLUDE_PATH2_OPTIONAL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_c4c83.dir/src.c.o -MF CMakeFiles/cmTC_c4c83.dir/src.c.o.d -o CMakeFiles/cmTC_c4c83.dir/src.c.o -c /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-N0BMpT/src.c
+        [2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_c4c83.dir/src.c.o -o cmTC_c4c83  -latomic -lm && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "ocean_install_thirdparty/android_arm64-v8a_static_Debug/lib/cmake/openxr/OpenXRConfig.cmake:32 (find_dependency)"
+      - "impl/ocean/platform/meta/quest/openxr/application/CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-SR7zGc"
+      binary: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-SR7zGc"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-33"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/home/fcx/lib/git/ocean/build/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-SR7zGc'
+        
+        Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_ec8a1
+        [1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DCMAKE_HAVE_LIBC_PTHREAD  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_ec8a1.dir/src.c.o -MF CMakeFiles/cmTC_ec8a1.dir/src.c.o.d -o CMakeFiles/cmTC_ec8a1.dir/src.c.o -c /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-SR7zGc/src.c
+        /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-SR7zGc/src.c:13:3: warning: implicit declaration of function 'pthread_cancel' is invalid in C99 [-Wimplicit-function-declaration]
+          pthread_cancel(thread);
+          ^
+        1 warning generated.
+        [2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_ec8a1.dir/src.c.o -o cmTC_ec8a1  -latomic -lm && :
+        FAILED: cmTC_ec8a1 
+        : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_ec8a1.dir/src.c.o -o cmTC_ec8a1  -latomic -lm && :
+        ld: error: undefined symbol: pthread_cancel
+        >>> referenced by src.c:13
+        >>>               CMakeFiles/cmTC_ec8a1.dir/src.c.o:(main)
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "ocean_install_thirdparty/android_arm64-v8a_static_Debug/lib/cmake/openxr/OpenXRConfig.cmake:32 (find_dependency)"
+      - "impl/ocean/platform/meta/quest/openxr/application/CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-8mdVEV"
+      binary: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-8mdVEV"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-33"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/home/fcx/lib/git/ocean/build/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-8mdVEV'
+        
+        Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_496b1
+        [1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -MD -MT CMakeFiles/cmTC_496b1.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_496b1.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_496b1.dir/CheckFunctionExists.c.o -c /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-8mdVEV/CheckFunctionExists.c
+        [2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=pthread_create -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_496b1.dir/CheckFunctionExists.c.o -o cmTC_496b1  -lpthreads  -latomic -lm && :
+        FAILED: cmTC_496b1 
+        : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=pthread_create -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_496b1.dir/CheckFunctionExists.c.o -o cmTC_496b1  -lpthreads  -latomic -lm && :
+        ld: error: unable to find library -lpthreads
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "ocean_install_thirdparty/android_arm64-v8a_static_Debug/lib/cmake/openxr/OpenXRConfig.cmake:32 (find_dependency)"
+      - "impl/ocean/platform/meta/quest/openxr/application/CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-2W0RgJ"
+      binary: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-2W0RgJ"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-33"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/home/fcx/lib/git/ocean/build/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-2W0RgJ'
+        
+        Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_d2deb
+        [1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -MD -MT CMakeFiles/cmTC_d2deb.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_d2deb.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_d2deb.dir/CheckFunctionExists.c.o -c /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-2W0RgJ/CheckFunctionExists.c
+        [2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=pthread_create -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_d2deb.dir/CheckFunctionExists.c.o -o cmTC_d2deb  -lpthread  -latomic -lm && :
+        FAILED: cmTC_d2deb 
+        : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=pthread_create -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_d2deb.dir/CheckFunctionExists.c.o -o cmTC_d2deb  -lpthread  -latomic -lm && :
+        ld: error: unable to find library -lpthread
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:136 (try_compile)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/FindThreads.cmake:179 (_threads_check_flag_pthread)"
+      - "/home/fcx/Android/Sdk/cmake/3.30.3/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "ocean_install_thirdparty/android_arm64-v8a_static_Debug/lib/cmake/openxr/OpenXRConfig.cmake:32 (find_dependency)"
+      - "impl/ocean/platform/meta/quest/openxr/application/CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-c6JZrP"
+      binary: "/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-c6JZrP"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-33"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android33"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/home/fcx/lib/git/ocean/build/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-c6JZrP'
+        
+        Run Build Command(s): /home/fcx/Android/Sdk/cmake/3.30.3/bin/ninja -v cmTC_4c595
+        [1/2] /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_4c595.dir/CheckForPthreads.c.o -MF CMakeFiles/cmTC_4c595.dir/CheckForPthreads.c.o.d -o CMakeFiles/cmTC_4c595.dir/CheckForPthreads.c.o -c /home/fcx/lib/git/ocean/build/gradle/ocean_build_gradle/CMakeFiles/CMakeScratch/TryCompile-c6JZrP/CheckForPthreads.c
+        [2/2] : && /home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android33 --sysroot=/home/fcx/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -static-libstdc++ -Wl,--build-id=sha1 -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections CMakeFiles/cmTC_4c595.dir/CheckForPthreads.c.o -o cmTC_4c595  -pthread  -latomic -lm && :
+        
+      exitCode: 0
