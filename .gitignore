@@ -36,3 +36,6 @@ ocean_install_thirdparty
 
 install_ocean_thirdparty
 build_ocean_thirdparty
+
+build/gradle/ocean_build_gradle/
+build/gradle/ocean_install_gradle/
