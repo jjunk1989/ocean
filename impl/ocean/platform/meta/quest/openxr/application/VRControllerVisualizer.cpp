@@ -44,8 +44,12 @@ VRControllerVisualizer::VRControllerVisualizer(const Rendering::EngineRef& engin
 		case Device::DT_QUEST_PRO:
 			controllerAim_t_controllerModel_ = Vector3(0, 0, Scalar(0.055));
 			break;
-
+        case Device::DT_PICO:
+            controllerAim_t_controllerModel_ = Vector3(0, 0, Scalar(0.03));
+            break;
 		case Device::DT_UNKNOWN:
+            controllerAim_t_controllerModel_ = Vector3(0, 0, Scalar(0.03));
+            break;
 		case Device::DT_QUEST_END:
 			ocean_assert(false && "Unknown device type!");
 			break;

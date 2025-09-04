@@ -22,6 +22,8 @@
 
 #include <queue>
 
+// #define ENABLE_HAND 1
+
 namespace Ocean
 {
 
@@ -207,11 +209,13 @@ class OCEAN_PLATFORM_META_QUEST_OPENXR_APPLICATION_EXPORT VRNativeApplicationAdv
 		/// The visualizer for controllers.
 		VRControllerVisualizer vrControllerVisualizer_;
 
+#ifdef ENABLE_HAND
 		/// The visualizer for hands.
 		VRHandVisualizer vrHandVisualizer_;
 
 		/// The accessor for most recent hand poses.
 		HandPoses handPoses_;
+#endif
 
 		/// The passhrough object.
 		Passthrough passthrough_;

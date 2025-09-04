@@ -9,6 +9,7 @@
 
 #include "ocean/platform/android/Utilities.h"
 
+
 namespace Ocean
 {
 
@@ -20,7 +21,14 @@ namespace Meta
 
 namespace Quest
 {
-
+#ifdef OCEAN_PLATFORM_META_QUEST_USE_EXTERNAL_DEVICE_NAME
+std::string PlatformMetaDevice_externalDeviceName(const uint32_t deviceType) {
+    return "Pico";
+}
+uint32_t PlatformMetaDevice_externalDeviceType(const std::string& productModel, const std::string& productName) {
+    return Device::DeviceType::DT_PICO;
+}
+#endif
 Device::DeviceType Device::deviceType()
 {
 	static_assert(DT_QUEST_END < invalidQuestDeviceValue_, "Invalid device type!");
@@ -59,6 +67,11 @@ Device::DeviceType Device::deviceType()
 	{
 		return DT_QUEST_PRO;
 	}
+	if (productModel == "pico")
+	{
+		return DT_PICO;
+	}
+	return DT_PICO;
 
 #ifdef OCEAN_PLATFORM_META_QUEST_USE_EXTERNAL_DEVICE_NAME
 
@@ -126,7 +139,6 @@ std::string Device::deviceName(const DeviceType deviceType)
 	ocean_assert(false && "Invalid device type!");
 	return std::string("Unknown");
 }
-
 } // namespace Quest
 
 } // namespace Meta

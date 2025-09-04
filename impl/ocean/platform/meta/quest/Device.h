@@ -10,6 +10,8 @@
 
 #include "ocean/platform/meta/quest/Quest.h"
 
+#define OCEAN_PLATFORM_META_QUEST_USE_EXTERNAL_DEVICE_NAME 1
+
 namespace Ocean
 {
 
@@ -47,6 +49,8 @@ class Device
 			DT_QUEST_3S,
 			/// Quest Pro device.
 			DT_QUEST_PRO,
+            /// Pico
+            DT_PICO,
 
 			/// Exclusive end of device types.
 			DT_QUEST_END

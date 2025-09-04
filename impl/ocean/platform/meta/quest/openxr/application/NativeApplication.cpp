@@ -130,12 +130,24 @@ bool NativeApplication::run()
 
 #endif // defined(ANDROID)
 
-	Platform::OpenXR::Instance::determineApiLayers();
 
+#ifdef OCEAN_PLATFORM_BUILD_ANDROID
+	Platform::OpenXR::Instance::determineApiLayers();
+	XrInstanceCreateInfoAndroidKHR xrInstanceCreateInfoAndroidKHR = {};
+	xrInstanceCreateInfoAndroidKHR.type = XR_TYPE_INSTANCE_CREATE_INFO_ANDROID_KHR;
+	xrInstanceCreateInfoAndroidKHR.applicationVM = androidApp_->activity->vm;
+	xrInstanceCreateInfoAndroidKHR.applicationActivity = androidApp_->activity->clazz;
+	xrInstanceCreateInfoAndroidKHR.next = nullptr;
+	if (!xrInstance_.initialize(necessaryOpenXRExtensionNames(), "ocean_android", &xrInstanceCreateInfoAndroidKHR))
+	{
+		return false;
+	}
+#else
 	if (!xrInstance_.initialize(necessaryOpenXRExtensionNames()))
 	{
 		return false;
 	}
+#endif
 
 	Log::debug() << "OpenXR instance initialized";
 

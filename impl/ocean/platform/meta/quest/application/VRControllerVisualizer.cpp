@@ -328,7 +328,13 @@ bool VRControllerVisualizer::loadModels(const Device::DeviceType deviceType, con
 			rightRenderModelFile = renderModelDirectory + IO::File("quest3_controller_right.obj");
 			break;
 
+        case Device::DT_PICO:
+            leftRenderModelFile = renderModelDirectory + IO::File("quest_controller_left.obj");
+            rightRenderModelFile = renderModelDirectory + IO::File("quest_controller_right.obj");
+            break;
 		case Device::DT_UNKNOWN:
+            leftRenderModelFile = renderModelDirectory + IO::File("quest_controller_left.obj");
+            rightRenderModelFile = renderModelDirectory + IO::File("quest_controller_right.obj");
 		case Device::DT_QUEST_END:
 			ocean_assert(false && "Never be here!");
 			return false;

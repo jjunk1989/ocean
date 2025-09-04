@@ -95,10 +95,12 @@ void VRNativeApplicationAdvanced::onOpenXRSessionReady()
 {
 	VRNativeApplication::onOpenXRSessionReady();
 
+#ifdef ENABLE_HAND
 	if (!handPoses_.isValid() && !handPoses_.initialize(xrSession_))
 	{
 		Log::error() << "OpenXR VRNativeApplicationAdvanced: Failed to initialize hand poses";
 	}
+#endif
 
 	bool allPassthroughExtensionsEnabled = true;
 
@@ -155,7 +157,9 @@ void VRNativeApplicationAdvanced::onFramebufferInitialized()
 
 	VRNativeApplication::onFramebufferInitialized();
 
+#ifdef ENABLE_HAND
 	vrHandVisualizer_ = VRHandVisualizer(engine_, framebuffer_);
+#endif
 
 	// Load the controller models from disk and initialize the visualizers
 	ocean_assert(Platform::Android::ResourceManager::get().isValid());
@@ -195,7 +199,10 @@ void VRNativeApplicationAdvanced::onFramebufferReleasing()
 	scopedLock.release();
 
 	vrControllerVisualizer_.release();
+
+#ifdef ENABLE_HAND
 	vrHandVisualizer_.release();
+#endif
 
 	VRNativeApplication::onFramebufferReleasing();
 }
@@ -344,6 +351,7 @@ void VRNativeApplicationAdvanced::onPreRender(const XrTime& xrPredictedDisplayTi
 		vrControllerVisualizer_.visualizeControllersInWorld(trackedController());
 	}
 
+#ifdef ENABLE_HAND
 	if (!handPoses_.update(baseSpace(), xrPredictedDisplayTime))
 	{
 		Log::error() << "OpenXR VRNativeApplicationAdvanced: Failed to update hand poses";
@@ -356,6 +364,8 @@ void VRNativeApplicationAdvanced::onPreRender(const XrTime& xrPredictedDisplayTi
 			Log::error() << "OpenXR VRNativeApplicationAdvanced: Failed to visualize hands";
 		}
 	}
+#endif
+
 
 	// in case a frame is skipped in the headset (e.g., because the headset is stalling/busy), we may get a predicted display time which is younger than the previous one, we don't update the scene description in this case
 

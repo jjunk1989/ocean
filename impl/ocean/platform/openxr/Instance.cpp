@@ -22,7 +22,7 @@ Instance::~Instance()
 	release();
 }
 
-bool Instance::initialize(const StringSet& necessaryExtensions, const std::string& applicationName)
+bool Instance::initialize(const StringSet& necessaryExtensions, const std::string& applicationName, const void* pNext)
 {
 	const ScopedLock scopedLock(lock_);
 
@@ -58,6 +58,7 @@ bool Instance::initialize(const StringSet& necessaryExtensions, const std::strin
 	xrInstanceCreateInfo.enabledApiLayerNames = nullptr;
 	xrInstanceCreateInfo.enabledExtensionCount = uint32_t(enableExtensionNames.size());
 	xrInstanceCreateInfo.enabledExtensionNames = enableExtensionNames.empty() ? nullptr : enableExtensionNames.data();
+	xrInstanceCreateInfo.next = pNext;
 
 	XrResult xrResult = xrCreateInstance(&xrInstanceCreateInfo, &xrInstance_);
 

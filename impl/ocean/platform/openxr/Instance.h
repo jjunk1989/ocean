@@ -69,7 +69,7 @@ class OCEAN_PLATFORM_OPENXR_EXPORT Instance final
 		 * @param applicationName The name of the application
 		 * @return True, if succeeded
 		 */
-		bool initialize(const StringSet& necessaryExtensions, const std::string& applicationName = "OceanOpenXR");
+		bool initialize(const StringSet& necessaryExtensions, const std::string& applicationName = "OceanOpenXR", const void* pNext = nullptr);
 
 		/**
 		 * Explicitly releases the instance and all associated resources.
